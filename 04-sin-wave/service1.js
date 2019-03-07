@@ -18,18 +18,19 @@ function gen_stat(){
 	return message
 }
 function sinWaveByMinute(){
-	const ONE_DEGREE_TO_RADAIN=0.0174533;
+	var message="#Sine Web\n"
 	
 	// Get Minute
-	var dateClass=New Date();
+	var dateClass=new Date();
 	var now_minute=dateClass.getMinutes();
-	console.log('Now Min : '+now_minute);
-	
-	//
-	
+	console.log('Console Now Min : '+now_minute);
+	message = message + "Web Now Minute : "+now_minute;
+		
+	return message;
 }
 
 app.get('/', (req, res) => res.send(( my_function() )) )
 app.get('/metrics', (req, res) => res.send(( gen_stat() )) )
+app.get('/sine', (req, res) => res.send(( sinWaveByMinute() )) )
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
