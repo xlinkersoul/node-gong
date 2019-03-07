@@ -10,4 +10,4 @@ get Minute using Node.JS
 4. Create Metrics in Prometheus http://127.0.0.1:9090
 4. Create Graph in Grafana http://127.0.0.1:3000
 
-![alt text](https://github.com/xlinkersoul/node-gong/tree/master/05-sine-wave-by-minute/sine_wave.png)
+![Screenshot](sine_wave.png)
