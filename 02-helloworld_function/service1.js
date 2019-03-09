@@ -5,7 +5,7 @@ const port = 9999
 
 function my_function(){
 	console.log('entering my_function')
-	var message="Hello World"
+	var message="Hello World from my_function"
 	console.log('finish my_function')
 	console.log('---------------------------------')
 	return message
