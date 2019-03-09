@@ -10,6 +10,7 @@ function my_function(){
 	console.log('---------------------------------')
 	return message
 }
+
 function gen_stat(){
 
 	var message="# Equinox Custom Stat\n"
