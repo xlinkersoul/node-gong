@@ -12,7 +12,8 @@ Write first Metrics using Node.JS
    modify `target port` to `9999`<br/>
    example `- targets: ['localhost:9999']`<br/>
 5. Start Prometheus
-6. Open Targets on the Menu `Status->Targets`, the targets state should be `UP` 
-7. Query by `equinox_node_result`
-8. Query `equinox_node_result {code="2001"}`
-9. Query `equinox_node_result {server="OCF3g402"}`
+6. Open `Targets` on the Menu `Status->Targets`, the targets state should be `UP` 
+7. from `Graph` Menu<\br>
+execute `Query` by `equinox_node_result`
+8. execute `Query` Query `equinox_node_result {code="2001"}`
+9. execute `Query` Query `equinox_node_result {server="OCF3g402"}`
