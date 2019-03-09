@@ -19,13 +19,36 @@ function gen_stat(){
 	return message
 }
 function sinWaveByMinute(){
-	var message="#Sine Web\n"
+	var message = "#Sine Web\n"
 	
-	// Get Minute
-	var dateClass=new Date();
-	var now_minute=dateClass.getMinutes();
-	console.log('Console Now Min : '+now_minute);
-	message = message + "Web Now Minute : "+now_minute;
+	// declare variable myDate 
+	var myDate;
+	
+	// [---------------------------]	
+	// [ Link myDate to Date Class ]
+	// [---------------------------]
+	// to get Time, we Need to use Date Class in Node.JS
+	// so we construct/link myDate to Date Class template
+	// syntax : 'myDate = new Date()'
+	myDate = new Date();
+
+	// [------------------------------------]	
+	// [ Get Time by Calling toTimeString() ]
+	// [------------------------------------]	
+	// syntax : 'myDate.toTimeString()'
+	var now_time = myDate.toTimeString();
+	message = message + "Calling myDate.toTimeString()\n"
+	message = message + "Result : '" + now_time + "'\n";
+	message = message + "===================================================\n"
+	
+	// [------------------------------------]	
+	// [ Get Minute by Calling getMinutes() ]
+	// [------------------------------------]	
+	// syntax : 'myDate.toTimeString()'
+	var now_minute = myDate.getMinutes();
+	message = message + "Calling myDate.getMinutes()\n";
+	message = message + "Result : '" + now_minute + "'\n";
+	message = message + "===================================================\n"
 		
 	return message;
 }

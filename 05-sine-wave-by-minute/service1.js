@@ -25,27 +25,26 @@ function sinWaveByMinute(){
 	var dateClass=new Date();
 	var now_minute=dateClass.getMinutes();
 	console.log('Console Now Min : '+now_minute);
-	message = message + "Web Now Minute : "+now_minute;
+
 	
 	// convert Minute to degree
 	// 60 x 6 = 360, so to convert Minute to Degree 
 	//, we need to multiply minute by 6
 	var degree=now_minute*6;
 	console.log('Console Now Degree : '+degree);
-	message = message + "Web Now Degree : "+degree;
+
 	
 	// convert degree to radian
 	// 1 degree = 0.0174533 radian
 	var radian=degree*0.0174533;
 	console.log('Console Now radian : '+radian);
-	message = message + "Web Now radian : "+radian;	
-	
+
 	// get Sin Value
 	var sinValue = Math.sin(radian);
 	console.log('Console Now sinValue : '+sinValue);
-	message = message + "Web Now sinValue : "+sinValue;		
+
 	
-	message = 'my_sin_wave_1{service="sine"} '+sinValue+'\n'
+	var message = 'my_sin_wave_1{service="sine"} '+sinValue+'\n'
 	
 	return message;
 }
