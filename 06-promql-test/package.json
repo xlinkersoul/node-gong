@@ -11,7 +11,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "get": "^1.4.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "prom-client": "9.1.0",
     "prometheus-api-metrics": "^2.2.3",
     "q": "^1.5.1",
