@@ -9,7 +9,7 @@
   },
   "author": "Who",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "get": "^1.4.0",
     "lodash": "^4.17.15",
     "prom-client": "9.1.0",
